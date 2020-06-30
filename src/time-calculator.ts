@@ -1,7 +1,6 @@
 $(() => {
     const input = $("#input");
-    input.on("input keydown keyup mousedown mouseup select contextmenu drop", () => {
-        debugger;
+    input.on("keyup" /*"input keydown keyup mousedown mouseup select contextmenu drop"*/, () => {
         let val = input.val().toString().replace(/[^\d:+-\s]/g,"");
         input.val(val);
 

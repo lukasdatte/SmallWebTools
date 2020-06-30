@@ -3,13 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="time-calculator.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="time-calculator.js"></script>
     <title>Time Calculator</title>
 </head>
 <body>
-<input id="input" name="input" type="text">
-<label for="input"></label>
-<span id="output"></span>
+<div class="contents">
+    <h1>Time Calculator</h1>
+    <div id="calculator">
+        <label for="input">Ausdruck: <input id="input" name="input" type="text"></label>
+        <p>Ergebnis: <span id="output">Bitte gib oben etwas ein. z.B. <code>08:00 - 10:00</code></span></p>
+        <p>Beispiel: <span><code>5:10 - 10 + 02:02</code></span> ergibt <code>5h 10 min - 10 min + 2h 2min</code></p>
+        
+    </div>
+</div>
 </body>
 </html>
