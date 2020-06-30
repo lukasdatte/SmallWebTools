@@ -1,0 +1,13 @@
+{
+  "files": [
+  ],
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "target": "es2019",
+    "downlevelIteration": true,
+    "strict": false,
+    "declaration": true,
+    "typeRoots" : ["./typings","./src", "./node_modules/@types"],
+    "lib": ["es2019", "dom"]
+  }
+}
