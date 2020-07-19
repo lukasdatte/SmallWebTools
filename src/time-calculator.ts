@@ -1,7 +1,7 @@
 $(() => {
     const input = $("#input");
     input.on("keyup" /*"input keydown keyup mousedown mouseup select contextmenu drop"*/, () => {
-        let val = input.val().toString().replace(/[^\d:+-\s]/g,"");
+        let val = input.val().toString().replace("/",":").replace(/[^\d:+-\s]/g,"");
         input.val(val);
 
         //collapse signs
