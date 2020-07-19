@@ -65,8 +65,12 @@ class Time {
         this.positive = cleanTime.positive;
     }
 
+    inMinutes(){
+        return this.hour*60 + this.minute;
+    }
+
     toString () {
-        return `${this.positive ? "" : "-"}${this.hour}:${this.minute}h  ${this.positive ? "" : "-"}${this.hour*60 + this.minute}min`;
+        return `${this.positive ? "" : "-"}${this.hour}:${this.minute}h  ${this.positive ? "" : "-"}${this.inMinutes()}min  ${Math.ceil((this.inMinutes())/6)}x6min  ${Math.ceil((this.inMinutes())/10)}x10min  ${Math.ceil((this.inMinutes())/12)}x12min  ${Math.ceil((this.inMinutes())/30)}x30min`;
     }
 
     asMinutes() {
