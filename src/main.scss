@@ -24,7 +24,14 @@ h2 {
 }
 
 code {
-  font-size: 1.2em;
+   font-size: 1.2em;
+ }
+
+code code {
+  font-size: inherit;
+}
+
+.label {
   background-color: #efa88e;
   padding: 3px 7px;
   border-radius: 5px;
